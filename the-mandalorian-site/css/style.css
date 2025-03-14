@@ -119,6 +119,7 @@ a {
 	list-style: none;
 	color: #D9984A;
     text-align: center;
+	text-transform: uppercase;
 	}
 .menu a {
 	display: block;
@@ -130,9 +131,7 @@ a {
 	color: #D9984A;
 	text-decoration: none;
 	border: 1px solid #D9984A;
-	border-radius: 4px;
-	text-transform: uppercase;
-	
+	border-radius: 4px;	
 }
 .menu a:hover{
 	font-family:'Montserrat', sans-serif;
