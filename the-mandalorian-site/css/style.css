@@ -131,7 +131,8 @@ a {
 	text-decoration: none;
 	border: 1px solid #D9984A;
 	border-radius: 4px;
-	transition: all 0.5s;
+	text-transform: uppercase;
+	
 }
 .menu a:hover{
 	font-family:'Montserrat', sans-serif;
@@ -140,6 +141,7 @@ a {
 	border-color: #fff8f1;
 	background-color: #D9984A;
 	color: #fff8f1 ;
+	transition: all 0.5s;
 }
 .menu li {
 	list-style-type: none;
