@@ -520,3 +520,216 @@ a.button:hover {
     color: #45151B;
     text-decoration: underline;
 }
+
+
+/* Mobile first approach - Base styles */
+
+/* General responsive settings */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media Queries */
+
+/* Small devices (phones) */
+@media screen and (max-width: 576px) {
+    header {
+        flex-direction: column;
+        width: 90%;
+        padding: 1em 0;
+    }
+
+    header a img {
+        margin-bottom: 1em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        padding: 0.5em;
+    }
+
+    .banner-content {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .text-banner {
+        width: 100%;
+        border-radius: 50px;
+        padding: 1.5em;
+        box-sizing: border-box;
+        margin-bottom: 2em;
+    }
+
+    h1 {
+        font-size: 3em;
+        text-align: center;
+    }
+
+    .banner img {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .services {
+        width: 90%;
+    }
+
+    .services-row {
+        flex-direction: column;
+    }
+
+    .maquettes, .sites-web {
+        width: 100%;
+    }
+
+    .voir-plus {
+        width: 90%;
+    }
+
+    footer {
+        padding: 2em 0;
+    }
+
+    footer ul {
+        flex-direction: column;
+    }
+
+    footer li {
+        padding: 0.5em;
+    }
+
+    /* Project page responsive */
+    .section {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .section.inverted {
+        flex-direction: column;
+    }
+
+    .gros-titre {
+        font-size: 4em;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .image-part {
+        height: auto;
+    }
+
+    .exp {
+        flex-direction: column;
+    }
+
+    .exp div {
+        max-width: 100%;
+        margin-bottom: 2em;
+    }
+
+    .contact {
+        align-items: center;
+    }
+
+    .contact p {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Medium devices (tablets) */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    header, .banner-content, .services, .voir-plus, .container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 3.5em;
+    }
+
+    .text-banner {
+        width: 60%;
+        padding: 2em;
+    }
+
+    .banner img {
+        width: 35%;
+    }
+
+    .services-row {
+        flex-direction: column;
+    }
+
+    .maquettes, .sites-web {
+        width: 100%;
+    }
+
+    .exp div {
+        max-width: 45%;
+    }
+
+    .section {
+        gap: 2em;
+    }
+
+    .gros-titre {
+        font-size: 5em;
+    }
+}
+
+/* Large devices (desktops) */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    header, .banner-content, .services, .voir-plus, .container {
+        width: 85%;
+    }
+
+    .text-banner {
+        width: 55%;
+    }
+
+    .exp div {
+        max-width: 45%;
+    }
+}
+
+/* Extra adjustment for gallery layout */
+@media screen and (max-width: 768px) {
+    .gallery {
+        flex-direction: column;
+        width: 90%;
+        gap: 2em;
+    }
+
+    .frame {
+        font-size: 2em;
+    }
+
+    .hobbies {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .image-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .image-1 {
+        grid-column: 1;
+    }
+
+    .small-images {
+        grid-template-columns: 1fr;
+    }
+
+    .competence {
+        font-size: 1.2em;
+    }
+}
